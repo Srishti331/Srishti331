@@ -56,15 +56,6 @@ My technical fluency allows me to prototype core logic loops autonomously before
 
 <br/>
 
-## 📊 Developer & Activity Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Srishti331&show_icons=true&theme=tokyonight&hide_border=true&bg_color=121212" alt="GitHub Stats" width="48%">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Srishti331&layout=compact&theme=tokyonight&hide_border=true&bg_color=121212" alt="Top Langs" width="48%">
-</div>
-
----
-<div align="center">
   <sub>Let's build deterministic futures. Reach out on <a href="https://linkedin.com/in/srishti299">LinkedIn</a>.</sub>
 </div>
 
