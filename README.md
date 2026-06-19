@@ -17,13 +17,11 @@
 ## 🧭 Product Philosophy
 **"Pushing complexity into deterministic code."** 
 As an AI Product Manager, my approach centers on rapid prototyping and rigorous evaluation. I believe GenAI is only as good as the guardrails containing it.
-- **ROI-Driven AI**: I don't implement LLMs for the hype; I implement them to drive down operational metrics and scale outputs. For instance, achieving SOTA structural accuracy through closed-loop validation and a 2/3rd reduction in API costs via local token preprocessing.
+- **ROI-Driven AI**: I don't implement LLMs for the hype; I implement them to drive down operational metrics and scale outputs. 
 - **Agentic Workflows over Chatbots**: Moving beyond shallow conversational UI interfaces into multi-step, autonomous orchestrations utilizing MCP (Model Context Protocol), local state machines, and structured memory.
 - **First Principles DX/UX**: The end user should never feel the underlying latency or hallucination risks of the AI layers.
-- **Decoupled Architecture**: I separate probabilistic cognitive orchestrators (LLMs) from deterministic execution primitives (Python). This isolates mathematical tasks and heavy parsing, reducing API token costs and neutralising hallucination risks.
-- **Compliance & Privacy First**: Building robust local-first redaction and sanitation policies into every AI application to guarantee enterprise-level compliance before data ever hits external APIs.
 
-| 🧬 **Darwinian Evolution** | 📊 **Decoupled Concerns** | 📈 **ROI-Driven Design** |
+| 🧬 **Darwinian Evolution** | 📊 **Decoupled Architecture** | 📈 **ROI-Driven Design** |
 | :--- | :--- | :--- |
 | **Self-healing pipelines** that monitor errors, mutate code, and test fitness autonomously to survive data drift. | **Separating LLMs** (cognitive routing) from **Python** (deterministic math/parsing) to guarantee zero-hallucination. | Bypassing LLM hype to achieve **2/3rd cost reductions** through local token preprocessing. |
 
@@ -36,20 +34,23 @@ As an AI Product Manager, my approach centers on rapid prototyping and rigorous 
 ### 🔄 The Deterministic Breakthrough
 To deploy LLMs safely in enterprise workflows, I design decoupled agentic systems. By isolating probabilistic thinking from deterministic execution, we turn fragile text generation into stable software engineering.
 
+
 ```mermaid
 graph TD
     subgraph Traditional LLM Approach [Probabilistic & Fragile - High Token Cost]
-        A[Raw Input Document] --> B[LLM Direct Processing]
-        B -->|Hallucinations & Formatting Errors| C[Fragile Outputs]
+        A[Raw Document] --> B[LLM Direct Processing]
+        B -->|Formatting Errors| C[Fragile Outputs]
     end
 
+    C -.->|Paradigm Shift to Decoupled Design| D
+
     subgraph Decoupled Agentic Paradigm [Deterministic & ROI-Driven - 2/3rd Cost Saved]
-        D[Raw Input Document] --> E[Local Preprocessing & Token Stripping]
+        D[Raw Document] --> E[Local Token Preprocessing]
         E -->|Pruned Payload| F[Cognitive Router LLM]
         F -->|Schema Routing| G[Deterministic Python Primitives]
         G --> H[Pydantic Closed-Loop Validation]
+        H -->|Validation Pass| I[100% Reliable Output]
         H -->|Validation Fail| F
-        H -->|Success| I[100% Reliable Output]
     end
     
     style Traditional LLM Approach fill:#2c1f1f,stroke:#ff6b6b,stroke-width:1px
