@@ -37,14 +37,14 @@ To deploy LLMs safely in enterprise workflows, I design decoupled agentic system
 
 ```mermaid
 graph TD
-    subgraph Traditional LLM Approach [Probabilistic & Fragile - High Token Cost]
+    subgraph traditional_sub [Probabilistic & Fragile - High Token Cost]
         A[Raw Document] --> B[LLM Direct Processing]
         B -->|Formatting Errors| C[Fragile Outputs]
     end
 
     C -.->|Paradigm Shift to Decoupled Design| D
 
-    subgraph Decoupled Agentic Paradigm [Deterministic & ROI-Driven - 2/3rd Cost Saved]
+    subgraph decoupled_sub [Deterministic & ROI-Driven - 2/3rd Cost Saved]
         D[Raw Document] --> E[Local Token Preprocessing]
         E -->|Pruned Payload| F[Cognitive Router LLM]
         F -->|Schema Routing| G[Deterministic Python Primitives]
@@ -53,8 +53,8 @@ graph TD
         H -->|Validation Fail| F
     end
     
-    style Traditional LLM Approach fill:#2c1f1f,stroke:#ff6b6b,stroke-width:1px
-    style Decoupled Agentic Paradigm fill:#1f2c1f,stroke:#51cf66,stroke-width:1px
+    style traditional_sub fill:#2c1f1f,stroke:#ff6b6b,stroke-width:1px
+    style decoupled_sub fill:#1f2c1f,stroke:#51cf66,stroke-width:1px
 ```
 
 <br/>
