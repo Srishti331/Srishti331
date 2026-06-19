@@ -17,9 +17,11 @@
 ## 🧭 Product Philosophy
 **"Pushing complexity into deterministic code."** 
 As an AI Product Manager, my approach centers on rapid prototyping and rigorous evaluation. I believe GenAI is only as good as the guardrails containing it.
-- **ROI-Driven AI**: I don't implement LLMs for the hype; I implement them to drive down operational metrics (like the **47% inference cost reduction** achieved at Rizzle) and scale outputs.
-- **Agentic Workflows over Chatbots**: Moving beyond conversational UIs into multi-step, autonomous workflows utilizing RAG and MCP orchestration.
+- **ROI-Driven AI**: I don't implement LLMs for the hype; I implement them to drive down operational metrics and scale outputs. For instance, achieving SOTA structural accuracy through closed-loop validation and a 2/3rd reduction in API costs via local token preprocessing.
+- **Agentic Workflows over Chatbots**: Moving beyond shallow conversational UI interfaces into multi-step, autonomous orchestrations utilizing MCP (Model Context Protocol), local state machines, and structured memory.
 - **First Principles DX/UX**: The end user should never feel the underlying latency or hallucination risks of the AI layers.
+- **Decoupled Architecture**: I separate probabilistic cognitive orchestrators (LLMs) from deterministic execution primitives (Python). This isolates mathematical tasks and heavy parsing, reducing API token costs and neutralising hallucination risks.
+- **Compliance & Privacy First**: Building robust local-first redaction and sanitation policies into every AI application to guarantee enterprise-level compliance before data ever hits external APIs.
 
 <br/>
 
@@ -46,17 +48,39 @@ My technical fluency allows me to prototype core logic loops autonomously before
 
 <br/>
 
-## 📂 Featured Projects & Impact
+## 📂 Production Repositories & Agentic Systems
 
-| 🚀 **AI Product Studio** | 📄 **Doc Extractor** |
-| :--- | :--- |
-| **Independent Builder** prototyping agentic workflows.<br><br>• **Agentic Scraper**: Self-annealing AI agent lowering discovery TAT by 85%.<br>• **Insight Workflows**: MCP orchestration via n8n for rapid synthesis. | **LLM Insight Workflow** orchestrating complex document ingestion.<br><br>• Developing scalable document extraction pipelines for structured data synthesis using programmatic guardrails. |
-| 🎬 **Rizzle (SaaS)** | 🛡️ **Eureka Forbes (D2C)** |
-| **Senior PM** driving LLM pipelines (SFT, RLHF).<br><br>• **Cost Optimization**: Delivered 47% reduction in LLM inference costs.<br>• **RAG Tuning**: Enhanced media relevance by 35%. | **Product Manager** overhauling commerce systems.<br><br>• **Revenue Uplift**: 10x via propensity modelling.<br>• **Metrics**: Increased app ratings by 133%. |
+### 🧬 [darwinian-doc-extractor-Public-](https://github.com/Srishti331/darwinian-doc-extractor-Public-)
+> **Self-Evolving, Production-Grade Data Pipeline**
+> An enterprise AI pipeline that autonomously analyzes its own errors, mutates its Python source code, and mathematically evaluates the fitness of its updates to continuously improve unstructured data extraction.
+
+- **Darwinian Self-Evolution Loop**: Integrates a closed-loop mutation cycle that writes, compiles, and evaluates Python patches in isolated test runtimes.
+- **Strict Guardrails & Memory**: Employs historical error logging (`errors.json`, `journal.md`) and stateful circuit breakers to prevent infinite token-consumption loops.
+- **Robust Failover Architecture**: Automatic failover orchestration traversing Gemini (primary), OpenAI (fallback), and Groq (secondary) on rate-limit detection.
+- **PII Compliance Sanitization**: Mathematically redacts sensitive data (SSNs, emails, financial records) locally before transmitting payloads to external LLM APIs.
+
+<br>
+
+### 📊 [Agentic-Doc-Extractor](https://github.com/Srishti331/Agentic-Doc-Extractor)
+> **Decoupled Agentic Pipeline for Unstructured Documents**
+> Static codebases decay when confronted with real-world data drift. I architect closed-loop agentic systems that continuously evaluate runtime performance, autonomously patch logic errors, and evaluate fitness scores before committing code updates.
+
+- **Zero-Hallucination Decoupled Engine**: Restricts LLMs to high-level cognitive routing and semantic mapping, leaving text extraction to deterministic Python primitives.
+- **Agnostic Skill Schema**: Standardizes parsing structures so the same underlying regex and heuristic engines process invoices, resumes, and legal files dynamically.
+- **Local Computes over LLM Token Bloat**: Pre-filters and formats 1M+ token document blocks into clean JSON arrays, slashing LLM processing costs by up to 85%.
+
+<br>
+
+### 📈 [Agentic-NSE-Screener](https://github.com/Srishti331/Agentic-NSE-Screener)
+> **Agentic Equity Screener & Market Analysis Pipeline**
+> A production-grade financial screening pipeline combining local quantitative mathematical models with LLM orchestration for daily market reports.
+
+- **Deterministic Quantitative Shield**: Restricts LLM role to market synthesis, calculating RSI/ROE thresholds, technical breakouts, and Stop-Loss boundaries locally inside isolated Python modules.
+- **Resilient Web Crawler Layer**: Uses a custom `NSEScraper` primitive with built-in cache mechanics to extract and normalize fragmented market data.
+- **Dynamic Actionable Reporting**: Curates thousands of market metrics down to the top 3 high-probability setups daily, generating structured summaries matching custom risk tolerances.
 
 <br/>
 
-  <sub>Let's build deterministic futures. Reach out on <a href="https://linkedin.com/in/srishti299">LinkedIn</a>.</sub>
+<sub>Let's build deterministic futures. Reach out on <a href="https://linkedin.com/in/srishti299">LinkedIn</a>.</sub>
 </div>
-
 
