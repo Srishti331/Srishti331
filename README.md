@@ -23,6 +23,39 @@ As an AI Product Manager, my approach centers on rapid prototyping and rigorous 
 - **Decoupled Architecture**: I separate probabilistic cognitive orchestrators (LLMs) from deterministic execution primitives (Python). This isolates mathematical tasks and heavy parsing, reducing API token costs and neutralising hallucination risks.
 - **Compliance & Privacy First**: Building robust local-first redaction and sanitation policies into every AI application to guarantee enterprise-level compliance before data ever hits external APIs.
 
+| 🧬 **Darwinian Evolution** | 📊 **Decoupled Concerns** | 📈 **ROI-Driven Design** |
+| :--- | :--- | :--- |
+| **Self-healing pipelines** that monitor errors, mutate code, and test fitness autonomously to survive data drift. | **Separating LLMs** (cognitive routing) from **Python** (deterministic math/parsing) to guarantee zero-hallucination. | Bypassing LLM hype to achieve **2/3rd cost reductions** through local token preprocessing. |
+
+| 🤖 **Agentic Workflows** | 🛡️ **Privacy & Compliance** | ⚡ **First-Principles UX** |
+| :--- | :--- | :--- |
+| **MCP-driven workflows** utilizing local state machines and memory over basic chat interfaces. | **Local-first redaction** sanitizing sensitive data before it ever hits third-party APIs. | Shaving latency and handling failures gracefully so the end user never sees LLM jitter. |
+
+<br/>
+
+### 🔄 The Deterministic Breakthrough
+To deploy LLMs safely in enterprise workflows, I design decoupled agentic systems. By isolating probabilistic thinking from deterministic execution, we turn fragile text generation into stable software engineering.
+
+```mermaid
+graph TD
+    subgraph Traditional LLM Approach [Probabilistic & Fragile - High Token Cost]
+        A[Raw Input Document] --> B[LLM Direct Processing]
+        B -->|Hallucinations & Formatting Errors| C[Fragile Outputs]
+    end
+
+    subgraph Decoupled Agentic Paradigm [Deterministic & ROI-Driven - 2/3rd Cost Saved]
+        D[Raw Input Document] --> E[Local Preprocessing & Token Stripping]
+        E -->|Pruned Payload| F[Cognitive Router LLM]
+        F -->|Schema Routing| G[Deterministic Python Primitives]
+        G --> H[Pydantic Closed-Loop Validation]
+        H -->|Validation Fail| F
+        H -->|Success| I[100% Reliable Output]
+    end
+    
+    style Traditional LLM Approach fill:#2c1f1f,stroke:#ff6b6b,stroke-width:1px
+    style Decoupled Agentic Paradigm fill:#1f2c1f,stroke:#51cf66,stroke-width:1px
+```
+
 <br/>
 
 ## 🛠️ The AI PM Stack
